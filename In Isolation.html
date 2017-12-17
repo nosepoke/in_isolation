@@ -46,7 +46,7 @@ body.light {
 }
 
 body.red {
-  background-color: #660000
+  background-color: ##660000
 }
 
 /*
@@ -73,6 +73,7 @@ body.red {
 */
 
 .AngryText {
+  /* Currently not being used */
   font-family: inherit;
   color: red;
   font-weight: bold;
@@ -103,9 +104,13 @@ a.internalLink:hover, a.externalLink:hover {
 a.internalLink:active, a.externalLink:active {
   border-bottom: 0;
 }
+a.link-visited {
+	color: #a27be5;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">//$('#ui-bar').remove();
+//$(document.head).find('#style-ui-bar').remove(); 
+config.addVisitedLinkClass = true;
 
-
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
 
@@ -131,23 +136,22 @@ The computer doesn&#x27;t respond. That&#x27;s odd.
 
 Guided by the glow of your [[alarm clock]], you fumble for the wall panel next to your bed. Your hands find the button.
 
-[[Click]].</tw-passagedata><tw-passagedata pid="4" name="alarm clock" tags="Dark" position="1100,297">Yeah. What time is it?
+[[Click]].</tw-passagedata><tw-passagedata pid="4" name="alarm clock" tags="Dark" position="1100,297">
+0301. It&#x27;s late.
 
-0301. The red letters seem &lt;span class=&quot;AngryText&quot;&gt;angry,&lt;/span&gt; somehow.
+People on third shift are halfway through their working hours. You work first shift, and usually you sleep through the night. 
 
-People on third shift are wide awake, halfway through their working hours.
-
-But you work first shift, so it&#x27;s [[dark]] in here.</tw-passagedata><tw-passagedata pid="5" name="Click" tags="Room Light" position="899,599">A soft glow emanates from the LED bulb above your bed, illuminating the gray walls.
-
-You look around the room.
+A stupid time to be awake. No wonder it&#x27;s so [[dark]] here in your [[room]].</tw-passagedata><tw-passagedata pid="5" name="Click" tags="Room Light" position="899,599">A soft glow emanates from the LED bulb above your bed. You look around the room.
 
 There are your posters and pictures on [[the wall next to your bed]].
-Your [[roommate&#x27;s closet]] door is closed.
-Your [[closet door]] is open.
+
+Your [[roommate&#x27;s closet]] door is closed, but your [[closet door]] is open.
+
 You can&#x27;t see into [[the bathroom]] from this angle.
+
 You could check [[under your bed]], too.
 
-
+Maybe you could try going [[back to sleep]].
 </tw-passagedata><tw-passagedata pid="6" name="Asleep" tags="space" position="899,1">In the emptiness, you sense [[movement|Awake]].</tw-passagedata><tw-passagedata pid="7" name="the wall next to your bed" tags="Room Light" position="749,728">There&#x27;s a square little cubbyhole lined up with your pillows, taking the place of a bedside table. Your ID card and [[handheld|handheld1]] are tucked inside.
 
 Beyond that, there&#x27;s a poster for your [[favorite movie]]. Pictures of your family, and your best friends from school.
@@ -277,4 +281,4 @@ Some tabletop games. You&#x27;re missing the second expansion set for Gerbil Gri
 </tw-passagedata><tw-passagedata pid="50" name="title passage" tags="space" position="631,30">&quot;In Isolation&quot;
    
 
-[[Start|Asleep]]</tw-passagedata></tw-storydata>
+[[Start|Asleep]]</tw-passagedata><tw-passagedata pid="51" name="back to sleep" tags="" position="1532,356">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
