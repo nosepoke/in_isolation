@@ -1,0 +1,280 @@
+<tw-storydata name="In Isolation" startnode="50" creator="Twine" creator-version="2.1.3" ifid="979B7EC9-5DC5-444B-997E-5058A3363E9A" format="SugarCube" format-version="2.18.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
+  margin: 0;
+  /*Set background color to blue for now for image troubleshooting. 12-08-17*/
+  background-color:#004bc4;
+}
+#passages {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.passage {
+  width: 30%;
+  min-width: 26em;
+  height: 33%;
+  min-height: 33%;
+  font-family: 'Consolas', 'Lucida Console', 'Andale Mono', monospace;
+  font-size: 18px
+  letter-spacing: 0.1em;
+  padding: 1.5em;
+  /*
+  padding-left: 2em;
+  font-size:1.8em;
+  */
+  background-color:#000000;
+  color:#eee;
+  margin: 5%;
+  border: silver ridge 0.8em;
+  border-radius: 1em;
+}
+
+/*
+------ TAGGED BACKGROUND STYLES -----
+*/
+
+body.space {
+  background-image: url(starsGIF.gif);
+  background-repeat: repeat;
+}
+
+body.dark {
+  background-color: #000000
+}
+
+body.light {
+  background-color: #494947
+}
+
+body.red {
+  background-color: #660000
+}
+
+/*
+----- TAGGED PASSAGE STYLES -----
+----- The first one is an example -----
+*/
+
+.passage[data-tags~=mint] {
+  border-color: MediumAquaMarine;
+}
+.passage[data-tags~=Light] {
+  background-color: #494947;
+}
+.passage[data-tags~=Red] {
+  background-color: #660000;
+}
+.passage[data-tags~=peanut] {
+  border-color: Peru;
+}
+
+
+/*
+----- OCCASIONALLY USED STYLES -----
+*/
+
+.AngryText {
+  font-family: inherit;
+  color: red;
+  font-weight: bold;
+}
+
+/*
+----- SOME MORE STUFF DOWN HERE, IT'S PROBABLY IMPORTANT -----
+*/
+
+.content::before {
+  content: '&#8226;';
+  position: relative;
+  left: -0.6em;
+  margin-right: -0.4em;
+}
+a.internalLink, a.externalLink {
+  border-bottom: solid #fff 1px;
+  color:#eee;
+  font-weight:normal;
+}
+a.internalLink:hover, a.externalLink:hover {
+  text-decoration:none;
+  border-bottom: solid #fff 2px;
+  color:#fff;
+  font-weight:normal;
+  padding-left: 0;
+}
+a.internalLink:active, a.externalLink:active {
+  border-bottom: 0;
+}
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Awake" tags="Dark Room" position="898,198">Suddenly, you&#x27;re awake.
+
+Your [[room]] is [[dark]], aside from the weak red glow of your [[alarm clock]]. The ever-present hum of the ship&#x27;s systems continues, reassuring.</tw-passagedata><tw-passagedata pid="2" name="room" tags="Dark Room" position="699,298">It&#x27;s not a big room. You&#x27;re not the captain or anything—just another security officer—but your bed is comfortable, and the sheets are nice.
+
+You have a roommate, who&#x27;s usually working at [[this time|alarm clock]].
+
+You [[can&#x27;t see|dark]] if their bed is empty.</tw-passagedata><tw-passagedata pid="3" name="dark" tags="Dark Room" position="901,400">&quot;Computer, lights on low,&quot; you say. You&#x27;re still half-asleep. Your voice feels sticky.
+
+The computer doesn&#x27;t respond. That&#x27;s odd.
+
+Guided by the glow of your [[alarm clock]], you fumble for the wall panel next to your bed. Your hands find the button.
+
+[[Click]].</tw-passagedata><tw-passagedata pid="4" name="alarm clock" tags="Dark" position="1100,297">Yeah. What time is it?
+
+0301. The red letters seem &lt;span class=&quot;AngryText&quot;&gt;angry,&lt;/span&gt; somehow.
+
+People on third shift are wide awake, halfway through their working hours.
+
+But you work first shift, so it&#x27;s [[dark]] in here.</tw-passagedata><tw-passagedata pid="5" name="Click" tags="Room Light" position="899,599">A soft glow emanates from the LED bulb above your bed, illuminating the gray walls.
+
+You look around the room.
+
+There are your posters and pictures on [[the wall next to your bed]].
+Your [[roommate&#x27;s closet]] door is closed.
+Your [[closet door]] is open.
+You can&#x27;t see into [[the bathroom]] from this angle.
+You could check [[under your bed]], too.
+
+
+</tw-passagedata><tw-passagedata pid="6" name="Asleep" tags="space" position="899,1">In the emptiness, you sense [[movement|Awake]].</tw-passagedata><tw-passagedata pid="7" name="the wall next to your bed" tags="Room Light" position="749,728">There&#x27;s a square little cubbyhole lined up with your pillows, taking the place of a bedside table. Your ID card and [[handheld|handheld1]] are tucked inside.
+
+Beyond that, there&#x27;s a poster for your [[favorite movie]]. Pictures of your family, and your best friends from school.
+
+[[Nothing missing.|keep looking]]</tw-passagedata><tw-passagedata pid="8" name="roommate&#x27;s closet" tags="Room Light" position="377,732">The door to your roommate&#x27;s closet slides open easily.
+
+There&#x27;s [[a black box]] labeled &quot;R.T. LEE.&quot; You&#x27;ve been roommates for months and you&#x27;re still not sure what R.T. stands for. 
+
+There&#x27;s a black t-shirt with a smiling yellow dragon on it. Lee&#x27;s such a loveable nerd.
+
+[[Not much here|keep looking]].</tw-passagedata><tw-passagedata pid="9" name="closet door" tags="Room Light" position="899,799">Your standard-issue fatigues, dangling from standard-issue hangers.
+
+Your favorite sweatshirt is folded on the top shelf. 
+
+Mounted on the wall are your rifle, handgun, and multi-tool.
+
+Your closet is [[just as you left it|keep looking]] when you went to bed last night.</tw-passagedata><tw-passagedata pid="10" name="the bathroom" tags="Room Light" position="1090,799">You walk to the bathroom.
+
+Toothbrushes. And toothpaste.
+
+Shampoo bottles in a basket hanging from the showerhead.
+
+No one&#x27;s hiding in here. You&#x27;re not sure what you [[expected to find|keep looking]].</tw-passagedata><tw-passagedata pid="11" name="under your bed" tags="Room Light" position="1301,797">You have a few pairs of shoes under your bed, and a dusty [[foot locker]].
+
+Nothing looks [[out of place|keep looking]].</tw-passagedata><tw-passagedata pid="12" name="foot locker" tags="Room Light" position="1300,999">It&#x27;s been a while since you opened this thing.
+
+Some old history books on the Second Cold War.
+
+An orientation handbook, from when you started on the ship five years back.
+
+Some tabletop games. You&#x27;re missing the second expansion set for Gerbil Grimoires. Did your roommate borrow it?
+
+[[No mysteries here|keep looking]], aside from that.</tw-passagedata><tw-passagedata pid="13" name="keep looking" tags="Room Light" position="903,1099">You look around the room.
+
+There are your posters and pictures on [[your wall|the wall next to your bed]].
+Your [[roommate&#x27;s closet]] door is closed.
+Your [[closet door]] is open.
+You can&#x27;t see into [[the bathroom]] from here.
+You could check [[under your bed]], too.
+
+The [[lights flicker]] a couple times.</tw-passagedata><tw-passagedata pid="14" name="lights flicker" tags="Room Light" position="903,1249">The lights dim, then brighten.
+
+Once. Twice.
+
+[[ALARM]]</tw-passagedata><tw-passagedata pid="15" name="a black box" tags="Room Light" position="397,1090">You probably shouldn&#x27;t snoop through R.T.&#x27;s stuff, but it&#x27;s a secret black box. Of &lt;i&gt;course&lt;/i&gt; you&#x27;re going to look.
+
+You lift off the top.
+
+Seeds.
+
+Thousands.
+
+The box is filled with hundreds of little clear plastic bags, each containing handfulls of different seeds.
+
+R.T. is a botanist. You guess [[this is normal|keep looking]], for botanists.
+</tw-passagedata><tw-passagedata pid="16" name="ALARM" tags="Red" position="914,1381">FUSION CORE CONTAINMENT BREACH
+
+EVACUATE IMMEDIATELY
+
+[[EVACUATE IMMEDIATELY]]</tw-passagedata><tw-passagedata pid="17" name="EVACUATE IMMEDIATELY" tags="Room Red Timer" position="918,1510">You only have a few minutes to get off the ship before it explodes.
+
+No time to pack a bag, and you can only [[carry one thing|Grab things quickly]] in your arms.
+
+Or maybe you should [[run for the escape pods|Run for the pods]] right away.</tw-passagedata><tw-passagedata pid="18" name="Grab things quickly" tags="Room Red Timer Inventory" position="1201,1473">You spin, looking around the room. What to take?
+
+There are your posters and pictures on [[the wall next to your bed|bedwall2]].
+There&#x27;s the stuff in your [[roommate&#x27;s closet|RTcloset2]].
+There&#x27;s the stuff in &lt;i&gt;your&lt;/i&gt; [[closet|closet2]].
+Should you get things from [[the bathroom|bathroom2]]?
+And what about the things [[under your bed|underbed2]]?</tw-passagedata><tw-passagedata pid="19" name="Run for the pods" tags="Hallway Red Timer" position="100,2099">You sprint for the door, bare feet light on the carpet.
+
+(Prototype ends here.)</tw-passagedata><tw-passagedata pid="20" name="bedwall2" tags="Red Room Timer Inventory" position="903,1725">There&#x27;s a square little cubbyhole lined up with your pillows, taking the place of a bedside table. Your ID card and handheld are tucked inside.
+
+Beyond that, there&#x27;s a poster for your favorite movie. Pictures of your family and your best friends from school.
+
+(The prototype ends here.)</tw-passagedata><tw-passagedata pid="21" name="RTcloset2" tags="Room Red Timer Inventory" position="1051,1725">The door to your roommate&#x27;s closet slides open easily.
+
+There&#x27;s a black box labeled &quot;R.T. LEE.&quot; 
+
+There&#x27;s a black t-shirt with a smiling yellow dragon on it. 
+
+(Prototype ends here.)
+</tw-passagedata><tw-passagedata pid="22" name="closet2" tags="" position="1250,1726">Your standard-issue fatigues, dangling from standard-issue hangers.
+
+Your favorite sweatshirt is folded on the top shelf. 
+
+Mounted on the wall are your rifle, handgun, and multi-tool.
+
+(Prototype ends here.)</tw-passagedata><tw-passagedata pid="23" name="bathroom2" tags="Red Room Inventory Timer" position="1603,1726">Toothbrushes. And toothpaste.
+
+Shampoo bottles in a basket hanging from the showerhead.
+
+(Prototype ends here.)</tw-passagedata><tw-passagedata pid="24" name="underbed2" tags="" position="1802,1725">You have a few pairs of shoes under your bed, and a dusty foot locker.
+
+The [[foot locker|foot locker 2]] is too big for you to carry.
+
+(Prototype ends here.)</tw-passagedata><tw-passagedata pid="25" name="Take the t-shirt" tags="Room Red Inventory Timer" position="899,2100">This is a &lt;i&gt;really&lt;/i&gt; important t-shirt, right? 
+
+You drape it over your shoulder. 
+
+</tw-passagedata><tw-passagedata pid="26" name="box2" tags="Room Red Timer Inventory" position="1000,1899">The box is filled with hundreds of little clear plastic bags, each containing handfulls of different seeds.
+
+#Take the box
+#Leave the box</tw-passagedata><tw-passagedata pid="27" name="favorite movie" tags="Room Light" position="621,723">STAR WARS: EPISODE XVI
+THE FORGOTTEN PERIL
+
+Everyone agrees it&#x27;s the best of the latest trilogy.
+
+</tw-passagedata><tw-passagedata pid="28" name="Take the box" tags="Room Red Inventory Timer" position="1002,2100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="29" name="handheld" tags="Red Room Inventory Timer" position="655,1898">HANDHELD DESCRIPTION HERE
+
+#Take it with you
+[[Take something else|bedwall2]]</tw-passagedata><tw-passagedata pid="30" name="favorite movie 2" tags="Room Red Inventory Timer" position="502,1899">STAR WARS: EPISODE XVI
+THE FORGOTTEN PERIL
+
+Everyone agrees it&#x27;s the best of the pre-prequels.
+
+#Take the poster
+[[Take something else|bedwall2]]</tw-passagedata><tw-passagedata pid="31" name="handheld1" tags="" position="620,832">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="32" name="Take poster" tags="Room Red Inventory Timer" position="303,2098">Describe what happens when you take the poster</tw-passagedata><tw-passagedata pid="33" name="Take handheld" tags="Room Red Inventory Timer" position="409,2099">Describe what happens when you take the handheld</tw-passagedata><tw-passagedata pid="34" name="Take pillows" tags="" position="516,2099">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="35" name="Take ID card" tags="" position="622,2100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="36" name="Take photos" tags="" position="729,2097">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="37" name="Take sweatshirt" tags="" position="1202,1999">Describe what happens when you take this object
+</tw-passagedata><tw-passagedata pid="38" name="Take fatigues" tags="" position="1201,1897">Describe what happens when you take this object</tw-passagedata><tw-passagedata pid="39" name="Take rifle" tags="" position="1305,1900">Describe what happens when you take this object</tw-passagedata><tw-passagedata pid="40" name="Take handgun" tags="" position="1306,2003">Describe what happens when you take this object</tw-passagedata><tw-passagedata pid="41" name="Take multi-tool" tags="" position="1252,2106">Describe what happens when you take this object</tw-passagedata><tw-passagedata pid="42" name="Take toothbrushes" tags="" position="1601,1900">Describe what happens when you pick up this object</tw-passagedata><tw-passagedata pid="43" name="Take shampoo" tags="" position="1601,2002">Describe what happens when you take this object</tw-passagedata><tw-passagedata pid="44" name="foot locker 2" tags="" position="2003,1726">Some old history books on the Second Cold War.
+
+An orientation handbook, from when you started on the ship five years back.
+
+Some tabletop games. You&#x27;re missing the second expansion set for Gerbil Grimoires. Still one of your favorites, though.
+
+(Prototype ends here.)</tw-passagedata><tw-passagedata pid="45" name="Take shoes" tags="" position="1799,1899">Describe what happens</tw-passagedata><tw-passagedata pid="46" name="Take books" tags="" position="2002,1897">Describe what happens</tw-passagedata><tw-passagedata pid="47" name="Take handbook" tags="" position="2003,2001">Describe what happens</tw-passagedata><tw-passagedata pid="48" name="Take games" tags="" position="2002,2104">Describe what happens</tw-passagedata><tw-passagedata pid="49" name="Run for the pods 2" tags="Hallway Red Timer Inventory" position="1099,2298">The #OBJECT in your arms, you slam your palm against the panel next to your door. It slides open.
+
+</tw-passagedata><tw-passagedata pid="50" name="title passage" tags="space" position="631,30">&quot;In Isolation&quot;
+   
+
+[[Start|Asleep]]</tw-passagedata></tw-storydata>
