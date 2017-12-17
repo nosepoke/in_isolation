@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  /*Set background color to blue for now for image troubleshooting. 12-08-17*/
+  background-color:#004bc4;
+}
+#passages {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.passage {
+  width: 30%;
+  min-width: 26em;
+  height: 33%;
+  min-height: 33%;
+  font-family: 'Consolas', 'Lucida Console', 'Andale Mono', monospace;
+  font-size: 18px
+  letter-spacing: 0.1em;
+  padding: 1.5em;
+  /*
+  padding-left: 2em;
+  font-size:1.8em;
+  */
+  background-color:#000000;
+  color:#eee;
+  margin: 5%;
+  border: silver ridge 0.8em;
+  border-radius: 1em;
+}
+
+/*
+------ TAGGED BACKGROUND STYLES -----
+*/
+
+body.space {
+  background-image: url(starsGIF.gif);
+  background-repeat: repeat;
+}
+
+body.dark {
+  background-color: #000000
+}
+
+body.light {
+  background-color: #494947
+}
+
+body.red {
+  background-color: ##660000
+}
+
+/*
+----- TAGGED PASSAGE STYLES -----
+----- The first one is an example -----
+*/
+
+.passage[data-tags~=mint] {
+  border-color: MediumAquaMarine;
+}
+.passage[data-tags~=Light] {
+  background-color: #494947;
+}
+.passage[data-tags~=Red] {
+  background-color: #660000;
+}
+.passage[data-tags~=peanut] {
+  border-color: Peru;
+}
+
+
+/*
+----- OCCASIONALLY USED STYLES -----
+*/
+
+.AngryText {
+  /* Currently not being used */
+  font-family: inherit;
+  color: red;
+  font-weight: bold;
+}
+
+/*
+----- SOME MORE STUFF DOWN HERE, IT'S PROBABLY IMPORTANT -----
+*/
+
+.content::before {
+  content: '&#8226;';
+  position: relative;
+  left: -0.6em;
+  margin-right: -0.4em;
+}
+a.internalLink, a.externalLink {
+  border-bottom: solid #fff 1px;
+  color:#eee;
+  font-weight:normal;
+}
+a.internalLink:hover, a.externalLink:hover {
+  text-decoration:none;
+  border-bottom: solid #fff 2px;
+  color:#fff;
+  font-weight:normal;
+  padding-left: 0;
+}
+a.internalLink:active, a.externalLink:active {
+  border-bottom: 0;
+}
+a.link-visited {
+	color: #a27be5;
+}
