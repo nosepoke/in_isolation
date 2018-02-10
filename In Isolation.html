@@ -46,7 +46,12 @@ body.light {
 }
 
 body.red {
-  background-color: ##660000
+  background-color: #660000
+}
+
+body.flicker {
+  background-image: url(flickerGIF.gif);
+  background-repeat: repeat;
 }
 
 /*
@@ -66,6 +71,9 @@ body.red {
 .passage[data-tags~=peanut] {
   border-color: Peru;
 }
+.passage[data-tags~=flicker] {
+  background-color: #00000000;
+}
 
 
 /*
@@ -80,7 +88,7 @@ body.red {
 }
 
 /*
------ SOME MORE STUFF DOWN HERE, IT'S PROBABLY IMPORTANT -----
+----- SOME MORE STUFF DOWN HERE, LIKE LINK STYLES -----
 */
 
 .content::before {
@@ -109,11 +117,12 @@ a.link-visited {
 }
 
 
-
-
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">//$('#ui-bar').remove();
 //$(document.head).find('#style-ui-bar').remove(); 
 config.addVisitedLinkClass = true;
+
+
+
 
 
 
@@ -149,7 +158,7 @@ Guided by the glow of your [[alarm clock]], you fumble for the wall panel next t
 
 People on third shift are halfway through their working hours. You work first shift, and usually you sleep through the night. 
 
-A stupid time to be awake. No wonder it&#39;s so [[dark]] here in your [[room]].</tw-passagedata><tw-passagedata pid="5" name="Click" tags="Room Light" position="899,599" size="100,100">A soft glow emanates from the LED bulb above your bed. You look around the room.
+A stupid time to be awake. No wonder it&#39;s so [[dark]] here in your [[room]].</tw-passagedata><tw-passagedata pid="5" name="Click" tags="Room Light" position="904,548" size="100,100">A soft glow emanates from the LED bulb above your bed. You look around the room.
 
 There are your posters and pictures on [[the wall next to your bed]].
 
@@ -206,7 +215,7 @@ Your [[closet door]] is open.
 You can&#39;t see into [[the bathroom]] from here.
 You could check [[under your bed]], too.
 
-The [[lights flicker]] a couple times.</tw-passagedata><tw-passagedata pid="14" name="lights flicker" tags="Room Light" position="903,1249" size="100,100">The lights dim, then brighten.
+The [[lights flicker]] a couple times.</tw-passagedata><tw-passagedata pid="14" name="lights flicker" tags="Room flicker" position="903,1249" size="100,100">The lights dim, then brighten.
 
 Once. 
 
