@@ -49,6 +49,7 @@ body.red {
   background-color: #660000
 }
 
+/* I'm really not sure this is the right way to do a repeated GIF.*/
 body.flicker {
   background-image: url(flickerGIF.gif);
   background-repeat: repeat;
@@ -73,6 +74,7 @@ body.flicker {
 }
 .passage[data-tags~=flicker] {
   background-color: #00000000;
+  /*Trying to make the passage background transparent. */
 }
 
 
