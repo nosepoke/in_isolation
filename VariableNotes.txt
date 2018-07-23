@@ -1,0 +1,41 @@
+Of course you took the puppy. The cheese looked really tempting, though.
+
+[[Run!]]
+<<silently>><<set $object to "puppy">><</silently>>
+
+*****
+
+You start running!
+
+<<if $object eq "cheese">>The cheese trails wafts of cheddar scent behind you.
+	<<elseif $object eq "puppy">>The puppy easily keeps up with you.
+	<<elseif $object eq "wine">>The wine sloshes around in the bottle.
+<</if>>
+
+*****
+COMPLETE LIST OF $object VALUES
+poster
+handheld
+photos
+pillows
+
+tshirt
+seedbox
+
+fatigues
+sweatshirt
+rifle
+handgun
+multitool
+
+toothbrush
+shampoo
+
+boots
+sneakers
+
+oldbooks
+handbook
+gerbilgame
+
+nothing

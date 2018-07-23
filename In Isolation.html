@@ -243,7 +243,6 @@ EVACUATE IMMEDIATELY! [[EVACUATE IMMEDIATELY]]!</tw-passagedata><tw-passagedata 
 Do you take anything with you?
 
 [[Grab something!|Grab things quickly]]
-
 [[Just run for it!|Run for the pods]]</tw-passagedata><tw-passagedata pid="18" name="Grab things quickly" tags="Room Red Timer Inventory" position="932,1651" size="100,100">You spin, looking around the room. What to take?
 
 There are your posters and pictures on [[the wall next to your bed|bedwall2]].
@@ -252,7 +251,8 @@ There&#39;s the stuff in [[your closet|closet2]].
 Should you get toiletries from the [[bathroom|bathroom2]]?
 What about the keepsakes [[under your bed|underbed2]]?</tw-passagedata><tw-passagedata pid="19" name="Run for the pods" tags="Red Timer Room" position="1124,2604" size="100,100">That&#39;s right. To survive this, you don&#39;t need anything other than your wits and your two hands.
 
-Bare feet pressing hard into the soft carpet, you sprint for the door to [[the hallway|Run for the pods 2]].</tw-passagedata><tw-passagedata pid="20" name="bedwall2" tags="Red Room Timer Inventory" position="254,1804" size="100,100">There&#39;s a square little cubbyhole lined up with your pillows, taking the place of a bedside table. Your ID card and handheld are tucked inside.
+Bare feet pressing hard into the soft carpet, you sprint for the door to [[the hallway|Run for the pods 2]].
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;nothing&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="bedwall2" tags="Red Room Timer Inventory" position="254,1804" size="100,100">There&#39;s a square little cubbyhole lined up with your pillows, taking the place of a bedside table. Your ID card and handheld are tucked inside.
 
 Beyond that, there&#39;s a poster for your [[favorite movie|favorite movie 2]]. Pictures of your family and your best friends from school.
 
@@ -292,12 +292,12 @@ The foot locker is too big for you to carry. Should you take a moment to [[look 
 
 You wriggle your bare toes. Maybe you should just grab a pair of [[shoes|Shoes]].
 
-Or maybe you should [[look somewhere else|Grab things quickly]]?</tw-passagedata><tw-passagedata pid="25" name="T-shirt" tags="Room Red Inventory Timer" position="889,1878" size="100,100">This is a &lt;i&gt;really&lt;/i&gt; important t-shirt! You&#39;re pretty sure it is, anyway. Lee will thank you for rescuing it if you both survive the evactuation.
+Or maybe you should [[look somewhere else|Grab things quickly]]?</tw-passagedata><tw-passagedata pid="25" name="T-shirt" tags="Room Red Inventory Timer" position="889,1878" size="100,100">This is a //really// important t-shirt! You&#39;re pretty sure it is, anyway. Lee will thank you for rescuing it, if you both survive the evactuation.
 
 No, don&#39;t think that way. Of course you&#39;ll make it.
 
 You drape the shirt over your shoulder and sprint for the door to [[the hallway|Run for the pods 2]].
-
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;tshirt&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;
 </tw-passagedata><tw-passagedata pid="26" name="favorite movie" tags="Room Light" position="724,845" size="100,100">STAR WARS: EPISODE XVI
 THE FORGOTTEN PERIL
 
@@ -305,52 +305,61 @@ Everyone agrees it&#39;s the best of the latest trilogy.
 
 [[Nothing more to see here.|keep looking]]</tw-passagedata><tw-passagedata pid="27" name="Box" tags="Room Red Inventory Timer" position="891,1987" size="100,100">The box looks important. When you pick it up, its contents shift and make a soft hissing sound.
 
-You tuck it safely under your arm and [[run for the door|Run for the pods 2]].</tw-passagedata><tw-passagedata pid="28" name="favorite movie 2" tags="Room Red Inventory Timer" position="418,1856" size="100,100">STAR WARS: EPISODE XVI
+You secure it under your arm and [[run for the door|Run for the pods 2]].
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;seedbox&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="favorite movie 2" tags="Room Red Inventory Timer" position="418,1856" size="100,100">STAR WARS: EPISODE XVI
 THE FORGOTTEN PERIL
 
 Everyone agrees it&#39;s the best of the pre-prequels.
 
 [[Take the poster|Take poster]].
-[[Take something else|bedwall2]].</tw-passagedata><tw-passagedata pid="29" name="Take poster" tags="Room Red Inventory Timer" position="476,1970" size="100,100">You peel the poster from the wall.
+[[Take something else|bedwall2]].</tw-passagedata><tw-passagedata pid="29" name="Take poster" tags="Room Red Inventory Timer" position="476,1970" size="100,100">You peel the Star Wars poster from the wall.
 
 The ship might be done for, and you don&#39;t know if you&#39;ll survive whatever happens next. You might as well die with something you love, right?
 
-[[Start running!|Run for the pods 2]]</tw-passagedata><tw-passagedata pid="30" name="Take pillows" tags="Room Red Inventory Timer" position="422,2302" size="100,100">You grab two of the standard-issue pillows and hug them close to your chest. These should help you stay comfortable during the evacuation.
+[[Start running!|Run for the pods 2]]
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;poster&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Take pillows" tags="Room Red Inventory Timer" position="422,2302" size="100,100">You grab two of the standard-issue pillows and hug them close to your chest. These should help you stay comfortable during the evacuation.
 
 As comfortable as possible, at least.
 
-[[Start running!|Run for the pods 2]]</tw-passagedata><tw-passagedata pid="31" name="Take photos" tags="Room Red Inventory Timer" position="427,2192" size="100,100">You carefully gather the frames, stacking them in a way that will let you hold them securely in your hand. You don&#39;t want these memories slipping away.
+[[Start running!|Run for the pods 2]]
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;pillows&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Take photos" tags="Room Red Inventory Timer" position="427,2192" size="100,100">You carefully gather the frames, stacking them in a way that will let you hold them securely in your hand. You don&#39;t want these memories slipping away.
 
-[[Start running!|Run for the pods 2]]</tw-passagedata><tw-passagedata pid="32" name="Sweatshirt" tags="Room Red Timer Inventory" position="1284,1937" size="100,100">The sweatshirt is soft, old, gray. It smells like home.
+[[Start running!|Run for the pods 2]]
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;photos&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Sweatshirt" tags="Room Red Timer Inventory" position="1284,1937" size="100,100">The sweatshirt is soft, old, gray. It smells like home.
 
 You pull it over your head and [[start running|Run for the pods 2]].
-</tw-passagedata><tw-passagedata pid="33" name="Fatigues" tags="Room Red Timer Inventory" position="1282,1827" size="100,100">The ship might be done for, and you don&#39;t know if you&#39;ll survive whatever happens next. But at least you&#39;ll have clean pants!
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;sweatshirt&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Fatigues" tags="Room Red Timer Inventory" position="1282,1827" size="100,100">The ship might be done for, and you don&#39;t know if you&#39;ll survive whatever happens next. But at least you&#39;ll have clean pants!
 
-You move towards [[the door|Run for the pods 2]].</tw-passagedata><tw-passagedata pid="34" name="Rifle" tags="Room Red Timer Inventory" position="1283,2052" size="100,100">What if your escape pod lands on the planet below? You might need to defend yourself.
+You move towards [[the door|Run for the pods 2]].
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;fatigues&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="Rifle" tags="Room Red Timer Inventory" position="1283,2052" size="100,100">What if your escape pod lands on the planet below? You might need to defend yourself.
 
 You lift the rifle off its rack, unfold the carrying strap, and sling it across your back. You&#39;re going to be fine.
 
 You jog confidently [[towards the door|Run for the pods 2]].
-
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;rifle&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;
 </tw-passagedata><tw-passagedata pid="35" name="Handgun" tags="Room Red Timer Inventory" position="1284,2159" size="100,100">What if your escape pod lands on the planet below? You might need to defend yourself. The rifle is more powerful, but it&#39;s also heavier.
 
 You pull the handgun out of the closet and check the battery. The beam weapon has full power. You&#39;re all set.
 
-You set off at a jog towards [[the door|Run for the pods 2]].</tw-passagedata><tw-passagedata pid="36" name="Multi-tool" tags="Room Red Timer Inventory" position="1283,2268" size="100,100">The multi-tool is about the same size and shape as a can of vintage Coke, but it can run chemical analysis, purify water, and a do a whole bunch of other useful things. It even has a flashlight!
+You set off at a jog towards [[the door|Run for the pods 2]].
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;handgun&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="Multi-tool" tags="Room Red Timer Inventory" position="1283,2268" size="100,100">The multi-tool is about the same size and shape as a can of vintage Coke, but it can run chemical analysis, purify water, and a do a whole bunch of other useful things. It even has a flashlight!
 
 You tuck the multi-tool into the pocket of your pajama pants.
 
-[[Time to go|Run for the pods 2]].</tw-passagedata><tw-passagedata pid="37" name="Toothbrushes" tags="Room Red Timer Inventory" position="1617,1858" size="100,100">Who knows how long you&#39;ll be stuck in that escape pod, waiting for rescue. Maybe days.
+[[Time to go|Run for the pods 2]].
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;multitool&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="Toothbrushes" tags="Room Red Timer Inventory" position="1617,1858" size="100,100">Who knows how long you&#39;ll be stuck in that escape pod, waiting for rescue. Maybe days.
 
 Gross.
 
 You stuff the toothbrush and toothpaste into the pocket of your PJs. At least your breath will smell nice.
 
-[[Time to go|Run for the pods 2]]!</tw-passagedata><tw-passagedata pid="38" name="Shampoo" tags="Room Red Timer Inventory" position="1624,1972" size="100,100">You reach for the shampoo. Sure, from a survival perspective, there may be more practical things you could bring. But you know not to underestimate the power of a good hair day.
+[[Time to go|Run for the pods 2]]!
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;toothbrush&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="Shampoo" tags="Room Red Timer Inventory" position="1624,1972" size="100,100">You reach for the shampoo. Sure, from a survival perspective, there may be more practical things you could bring. But you know not to underestimate the power of a good hair day.
 
 Plus, this shampoo smells really nice. Citrusy.
 
-You leave the bathroom and [[head for the door|Run for the pods 2]].</tw-passagedata><tw-passagedata pid="39" name="FootLocker2" tags="Room Red Timer Inventory" position="2034,2017" size="100,100">You yank the foot locker from under your bed and flip open the lid. The alarm continues to blare the evacuation order.
+You leave the bathroom and [[head for the door|Run for the pods 2]].
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;shampoo&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="FootLocker2" tags="Room Red Timer Inventory" position="2034,2017" size="100,100">You yank the foot locker from under your bed and flip open the lid. The alarm continues to blare the evacuation order.
 
 You&#39;d better choose quickly.
 
@@ -369,19 +378,16 @@ You find some solid hiking boots tucked way back against the wall.
 Take the [[Chucks]].
 Take the [[hiking boots]].</tw-passagedata><tw-passagedata pid="41" name="Books" tags="Room Red Timer Inventory" position="2149,2087" size="100,100">You grab a few books from the stack. Nothing beats the feel of a real paper book. These should keep you occupied for a few days while you wait for rescue.
 
-You hold the books against your chest and [[move for the door|Run for the pods 2]].</tw-passagedata><tw-passagedata pid="42" name="Handbook" tags="Room Red Timer Inventory" position="2150,2200" size="100,100">You haven&#39;t read through the handbook since orientation, so you barely remember its contents. Maybe there&#39;s some useful information in there about what you should do right after abandoning the ship.
+You hold the books against your chest and [[move for the door|Run for the pods 2]].
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;oldbooks&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Handbook" tags="Room Red Timer Inventory" position="2150,2200" size="100,100">You haven&#39;t read through the handbook since orientation, so you barely remember its contents. Maybe there&#39;s some useful information in there about what you should do right after abandoning the ship.
 
 You tuck the handbook under your arm and [[head for the door|Run for the pods 2]].
-
-</tw-passagedata><tw-passagedata pid="43" name="Games" tags="Room Red Timer Inventory" position="2141,2316" size="100,100">//Gerbil Grimoires// is one of your favorites. One to four players—it should help you pass the time as you wait for rescue.
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;handbook&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="Games" tags="Room Red Timer Inventory" position="2141,2316" size="100,100">//Gerbil Grimoires// is one of your favorites. One to four players—it should help you pass the time as you wait for rescue.
 
 The second expansion set is missing, so you grab the big box for the core game and a smaller one for the first expansion.
 
 You hold the boxes in front of you and [[shuffle towards the door|Run for the pods 2]].
-
-</tw-passagedata><tw-passagedata pid="44" name="Run for the pods 2" tags="Hallway Red Timer Inventory" position="1101,2770" size="100,100">You walk through the door and into the hallway. 
-
-The alarm is a lot louder here, but you also hear voices far away. Other members of the crew, yelling something...you can&#39;t make it out.
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;gerbilgame&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="Run for the pods 2" tags="Hallway Red Timer Inventory" position="1101,2770" size="100,100">The alarm is a lot louder here in the hallway, but you also hear voices far away. Other members of the crew, yelling something...you can&#39;t make it out.
 
 A flashing red arrow points to your right, towards the escape pods.
 
@@ -407,14 +413,43 @@ Another shudder in the night [[wakes you]].
 
 But //something// must be wrong.</tw-passagedata><tw-passagedata pid="48" name="Take handheld and ID" tags="Room Red Inventory Timer" position="424,2087" size="100,100">You slip the objects into the pocket of your pajamas. The ID may or may not be helpful, but you are //not// going to go without your apps.
 
-[[Start running!|Run for the pods 2]]</tw-passagedata><tw-passagedata pid="49" name="Chucks" tags="Room Red Timer Inventory" position="2139,1881" size="100,100">Are these Chuck Taylors practical? No. They&#39;re well made, but if you end up crashing on the planet below, they won&#39;t last more than a few days.
+[[Start running!|Run for the pods 2]]
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;handheld&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="Chucks" tags="Room Red Timer Inventory" position="2139,1881" size="100,100">Are these Chuck Taylors practical? No. They&#39;re well made, but if you end up crashing on the planet below, they won&#39;t last more than a few days.
 
-There&#39;s just something about them that makes you feel good, and you want to take that feeling with you.
+But there&#39;s something about them that makes you feel good, and you want to take that feeling with you.
 
-You head for the door to [[the hallway|Run for the pods 2]], shoes in hand.</tw-passagedata><tw-passagedata pid="50" name="hiking boots" tags="Room Red Timer Inventory" position="2143,1769" size="100,100">You hold one boot in each hand. They&#39;re heavy, but practical. If you end up having an &quot;emergency landing&quot; on the planet below, these should serve you well.
+You head for the door to [[the hallway|Run for the pods 2]], shoes in hand.
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;sneakers&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="50" name="hiking boots" tags="Room Red Timer Inventory" position="2143,1769" size="100,100">You hold one boot in each hand. They&#39;re heavy, but practical. If you end up having an &quot;emergency landing&quot; on the planet below, these should serve you well.
 
-[[You head for the door|Run for the pods 2]].</tw-passagedata><tw-passagedata pid="51" name="Follow the arrows" tags="Hallway Red Timer Inventory" position="1101,2920" size="100,100">You start running in the direction of the arrow lights. OBJECT does SOMETHING OBJECT-DEPENDENT.
+[[You head for the door|Run for the pods 2]].
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;boots&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="Follow the arrows" tags="Hallway Red Timer Inventory" position="1101,2920" size="100,100">You start running in the direction of the arrows. 
 
+&lt;&lt;if $object eq &quot;poster&quot;&gt;&gt;The poster is large and awkward. It catches on the walls sometimes.
+	&lt;&lt;elseif $object eq &quot;handheld&quot;&gt;&gt;Let&#39;s test the handheld text.
+	&lt;&lt;elseif $object eq &quot;photos&quot;&gt;&gt;The wine sloshes around in the bottle.
+	&lt;&lt;elseif $object eq &quot;pillows&quot;&gt;&gt;The wine sloshes around in the bottle.
+	
+	&lt;&lt;elseif $object eq &quot;tshirt&quot;&gt;&gt;The wine sloshes around in the bottle.
+	&lt;&lt;elseif $object eq &quot;seedbox&quot;&gt;&gt;The wine sloshes around in the bottle.
+	
+	&lt;&lt;elseif $object eq &quot;fatigues&quot;&gt;&gt;The wine sloshes around in the bottle.
+	&lt;&lt;elseif $object eq &quot;sweatshirt&quot;&gt;&gt;The wine sloshes around in the bottle.
+	&lt;&lt;elseif $object eq &quot;rifle&quot;&gt;&gt;The wine sloshes around in the bottle.
+	&lt;&lt;elseif $object eq &quot;handgun&quot;&gt;&gt;The wine sloshes around in the bottle.
+	&lt;&lt;elseif $object eq &quot;multitool&quot;&gt;&gt;The wine sloshes around in the bottle.
+	
+	&lt;&lt;elseif $object eq &quot;toothbrush&quot;&gt;&gt;The wine sloshes around in the bottle.
+	&lt;&lt;elseif $object eq &quot;shampoo&quot;&gt;&gt;The wine sloshes around in the bottle.
+	
+	&lt;&lt;elseif $object eq &quot;boots&quot;&gt;&gt;The wine sloshes around in the bottle.
+	&lt;&lt;elseif $object eq &quot;sneakers&quot;&gt;&gt;The wine sloshes around in the bottle.
+	
+	&lt;&lt;elseif $object eq &quot;oldbooks&quot;&gt;&gt;The wine sloshes around in the bottle.
+	&lt;&lt;elseif $object eq &quot;handbook&quot;&gt;&gt;The wine sloshes around in the bottle.
+	&lt;&lt;elseif $object eq &quot;gerbilgame&quot;&gt;&gt;The wine sloshes around in the bottle.
+	
+	&lt;&lt;elseif $object eq &quot;nothing&quot;&gt;&gt;You hold your arms out for balance in the flickering light.
+&lt;&lt;/if&gt;&gt;
 There&#39;s a T-shaped intersection. If you kept going straight, you&#39;d end up in the engine room—probably the last place you&#39;d want to be at this moment. 
 
 [[The arrows point left]].</tw-passagedata><tw-passagedata pid="52" name="The arrows point left" tags="Hallway Red Timer Inventory" position="1101,3071" size="100,100">You round the corner as fast as you can. At the far end of the hallway, you see a little alcove with a row of circular hatches on the wall.
