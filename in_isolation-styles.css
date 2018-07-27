@@ -1,7 +1,25 @@
+/*
+------ SIDEBAR STYLES AND CONTENT -----
+*/
+
+#story-caption {
+	/* Style properties for the #story-caption element itself. */
+}
+#story-caption a {
+	/* Style properties for <a> elements within the #story-caption element. */
+}
+#title, #menu, #ui-bar-tray {
+	display: none;
+}
+
+/*
+------ DEFAULT BODY AND PASSAGE STYLES -----
+*/
+
 body {
   margin: 0;
-  /*Set background color to blue for now for image troubleshooting. 12-08-17*/
-  background-color:#004bc4;
+  /*Set background color to black as of July 2018*/
+  background-color:#000000;
 }
 #passages {
   margin: 0;
@@ -9,7 +27,7 @@ body {
   border: 0;
 }
 .passage {
-  width: 30%;
+  width: 70%;
   min-width: 26em;
   height: 33%;
   min-height: 33%;
@@ -20,12 +38,12 @@ body {
   /*
   padding-left: 2em;
   font-size:1.8em;
+  border: silver ridge 0.8em;
+  border-radius: 1em;
   */
   background-color:#000000;
   color:#eee;
   margin: 5%;
-  border: silver ridge 0.8em;
-  border-radius: 1em;
 }
 
 /*
@@ -55,6 +73,10 @@ body.flicker {
   background-repeat: repeat;
 }
 
+body.end {
+  background-color: #000000
+}
+
 /*
 ----- TAGGED PASSAGE STYLES -----
 ----- The first one is an example -----
@@ -68,9 +90,6 @@ body.flicker {
 }
 .passage[data-tags~=Red] {
   background-color: #660000;
-}
-.passage[data-tags~=peanut] {
-  border-color: Peru;
 }
 .passage[data-tags~=flicker] {
   background-color: #00000000;
