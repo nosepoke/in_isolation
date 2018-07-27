@@ -123,9 +123,11 @@ a.link-visited {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">//$('#ui-bar').remove();
 //$(document.head).find('#style-ui-bar').remove();
 config.addVisitedLinkClass = true;
+
 
 
 
@@ -422,39 +424,33 @@ You head for the door to [[the hallway|Run for the pods 2]], shoes in hand.
 &lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;sneakers&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="50" name="hiking boots" tags="Room Red Timer Inventory" position="2143,1769" size="100,100">You hold one boot in each hand. They&#39;re heavy, but practical. If you end up having an &quot;emergency landing&quot; on the planet below, these should serve you well.
 
 [[You head for the door|Run for the pods 2]].
-&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;boots&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="Follow the arrows" tags="Hallway Red Timer Inventory" position="1101,2920" size="100,100">You start running in the direction of the arrows. 
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $object to &quot;boots&quot;&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="Follow the arrows" tags="Hallway Red Timer Inventory" position="825,2874" size="200,200">You start running in the direction of the arrows. 
 
-&lt;&lt;if $object eq &quot;poster&quot;&gt;&gt;The poster is large and awkward. It catches on the walls sometimes.
-	&lt;&lt;elseif $object eq &quot;handheld&quot;&gt;&gt;Let&#39;s test the handheld text.
-	&lt;&lt;elseif $object eq &quot;photos&quot;&gt;&gt;The wine sloshes around in the bottle.
-	&lt;&lt;elseif $object eq &quot;pillows&quot;&gt;&gt;The wine sloshes around in the bottle.
-	
-	&lt;&lt;elseif $object eq &quot;tshirt&quot;&gt;&gt;The wine sloshes around in the bottle.
-	&lt;&lt;elseif $object eq &quot;seedbox&quot;&gt;&gt;The wine sloshes around in the bottle.
-	
-	&lt;&lt;elseif $object eq &quot;fatigues&quot;&gt;&gt;The wine sloshes around in the bottle.
-	&lt;&lt;elseif $object eq &quot;sweatshirt&quot;&gt;&gt;The wine sloshes around in the bottle.
-	&lt;&lt;elseif $object eq &quot;rifle&quot;&gt;&gt;The wine sloshes around in the bottle.
-	&lt;&lt;elseif $object eq &quot;handgun&quot;&gt;&gt;The wine sloshes around in the bottle.
-	&lt;&lt;elseif $object eq &quot;multitool&quot;&gt;&gt;The wine sloshes around in the bottle.
-	
-	&lt;&lt;elseif $object eq &quot;toothbrush&quot;&gt;&gt;The wine sloshes around in the bottle.
-	&lt;&lt;elseif $object eq &quot;shampoo&quot;&gt;&gt;The wine sloshes around in the bottle.
-	
-	&lt;&lt;elseif $object eq &quot;boots&quot;&gt;&gt;The wine sloshes around in the bottle.
-	&lt;&lt;elseif $object eq &quot;sneakers&quot;&gt;&gt;The wine sloshes around in the bottle.
-	
-	&lt;&lt;elseif $object eq &quot;oldbooks&quot;&gt;&gt;The wine sloshes around in the bottle.
-	&lt;&lt;elseif $object eq &quot;handbook&quot;&gt;&gt;The wine sloshes around in the bottle.
-	&lt;&lt;elseif $object eq &quot;gerbilgame&quot;&gt;&gt;The wine sloshes around in the bottle.
-	
+&lt;&lt;if $object eq &quot;poster&quot;&gt;&gt;The poster is large and awkward. It catches on the walls sometimes. By the time you get to the next turn, the edges of the poster are bent and torn in a few spots.
+	&lt;&lt;elseif $object eq &quot;handheld&quot;&gt;&gt;The weight of your handheld tugs at your pocket while you run. 
+	&lt;&lt;elseif $object eq &quot;photos&quot;&gt;&gt;The picture frames clink together with each step you take. You worry that they&#39;ll break, so you press them together even tighter.
+	&lt;&lt;elseif $object eq &quot;pillows&quot;&gt;&gt;It&#39;s hard to figure out how to run with pillows. You try a few different methods—hugging them against your chest, clutching one in each hand—but they flop around while you run, making it hard to see. Eventually you shove one pillow under each arm and plow your way down the hallway like a linebacker.
+	&lt;&lt;elseif $object eq &quot;tshirt&quot;&gt;&gt;You hold your roommate&#39;s dragon t-shirt like a flag, and it billows out behind you while you run.
+	&lt;&lt;elseif $object eq &quot;seedbox&quot;&gt;&gt;The contents of the black box shift with each step you take, making strange hissing sounds. 
+	&lt;&lt;elseif $object eq &quot;fatigues&quot;&gt;&gt;Your fatigues are bundled into a loose ball that you clutch in one hand. As you run, you realize the left pant leg has a stain on it the size of a tennis ball. When was the last time you washed these?
+	&lt;&lt;elseif $object eq &quot;sweatshirt&quot;&gt;&gt;Your hand closes tightly around your sweatshirt. Its familiar softness reassures you.
+	&lt;&lt;elseif $object eq &quot;rifle&quot;&gt;&gt;You hold the rifle with both hands as if you were running into battle. 
+	&lt;&lt;elseif $object eq &quot;handgun&quot;&gt;&gt;You&#39;re glad you took the time to put the holster on. Now you have both hands free, and you can run even faster.
+	&lt;&lt;elseif $object eq &quot;multitool&quot;&gt;&gt;The weight of the multi-tool tugs at your pocket while you run. You slow for a second to tighten the drawstring. Can&#39;t have your pants falling to your ankles while you try to escape.	
+	&lt;&lt;elseif $object eq &quot;toothbrush&quot;&gt;&gt;You feel a small cold wetness crawl across the side of your thigh. Apparently your toothbrush was still a bit damp from when you used it last night. Now your pocket smells like spearmint.
+	&lt;&lt;elseif $object eq &quot;shampoo&quot;&gt;&gt;The shampoo bottle breathes wafts of citrus scent into the air. It&#39;s a delicate smell that feels totally out of place in this situation. You&#39;re glad that you noticed it.	
+	&lt;&lt;elseif $object eq &quot;boots&quot;&gt;&gt;You hold a boot in each hand. They&#39;re damned heavy and they smell...used. You really hope they&#39;ll be helpful later.
+	&lt;&lt;elseif $object eq &quot;sneakers&quot;&gt;&gt;You hold one red shoe in each hand. They look especially vibrant in the angry glare of the alert lights.
+	&lt;&lt;elseif $object eq &quot;oldbooks&quot;&gt;&gt;You&#39;ve only been running for a few seconds and already you&#39;re breathing hard. These old books are big and clunky. The corners poke at your ribs. Maybe you don&#39;t have to bring all six volumes...but then again, you don&#39;t have time to sit and think about //which// of the six volumes you&#39;d leave behind. You take a deep breath and continue forward.
+	&lt;&lt;elseif $object eq &quot;handbook&quot;&gt;&gt;The handbook flutters in the air as you run. You catch glimpses of pages with bullet points and black-and-white diagrams.
+	&lt;&lt;elseif $object eq &quot;gerbilgame&quot;&gt;&gt;The //Gerbil Grimoires// boxes make it difficult to run. You can&#39;t move very quickly while holding them in front of you, so you shift them, turning the boxes on their sides. You stick one box under each arm, cringing as you hear the pieces falling out of place. If you ever get the chance to play again, it&#39;s going to be a pain to reorganize them. 	
 	&lt;&lt;elseif $object eq &quot;nothing&quot;&gt;&gt;You hold your arms out for balance in the flickering light.
 &lt;&lt;/if&gt;&gt;
 There&#39;s a T-shaped intersection. If you kept going straight, you&#39;d end up in the engine room—probably the last place you&#39;d want to be at this moment. 
 
-[[The arrows point left]].</tw-passagedata><tw-passagedata pid="52" name="The arrows point left" tags="Hallway Red Timer Inventory" position="1101,3071" size="100,100">You round the corner as fast as you can. At the far end of the hallway, you see a little alcove with a row of circular hatches on the wall.
+[[The arrows point left]].</tw-passagedata><tw-passagedata pid="52" name="The arrows point left" tags="Hallway Red Timer Inventory" position="1095,3082" size="100,100">You round the corner as fast as you can. At the far end of the hallway, you see a little alcove with a row of circular hatches on the wall.
 
-[[The escape pods]]!</tw-passagedata><tw-passagedata pid="53" name="The escape pods" tags="Hallway Red Timer Inventory" position="1098,3218" size="100,100">Faster! You practically fly down the hallway.
+[[The escape pods]]!</tw-passagedata><tw-passagedata pid="53" name="The escape pods" tags="Hallway Red Timer Inventory" position="1098,3217" size="100,100">Faster! You&#39;re almost flying down the hallway.
 
 Behind you comes the sound of something breaking. Metal twisting, snapping.
 
@@ -475,11 +471,17 @@ You&#39;re the last one to leave.
 
 
 
-</tw-passagedata><tw-passagedata pid="56" name="Strap in" tags="White Timer Inventory" position="1098,3668" size="100,100">Well, no reason to wait any longer.
+</tw-passagedata><tw-passagedata pid="56" name="Strap in" tags="White Timer Inventory" position="824,3613" size="200,200">Well, no reason to wait any longer. &lt;&lt;if $object eq &quot;tshirt&quot;&gt;&gt;You set the t-shirt on one of the pod&#39;s two seats.
+	&lt;&lt;elseif $object eq &quot;seedbox&quot;&gt;&gt;You set the box on one of e pod&#39;s two seats.
+	&lt;&lt;elseif $object eq &quot;multitool&quot;&gt;&gt;You set the multi-tool on one of e pod&#39;s two seats.
+	&lt;&lt;elseif $object eq &quot;oldbooks&quot;&gt;&gt;You drop the stack of books on one of e pod&#39;s two seats.
+	&lt;&lt;elseif $object eq &quot;gerbilgame&quot;&gt;&gt;You set the game boxes on one of e pod&#39;s two seats.
+	&lt;&lt;elseif $object eq &quot;nothing&quot;&gt;&gt;The pod is so small. It has only two seats.
+	&lt;&lt;else&gt;&gt;You set the $object on one of the pod&#39;s two seats.
+&lt;&lt;/if&gt;&gt;
+You slip into an environment suit — just in case things go sideways. 
 
-You slip into an environmental suit just in case things go sideways. Then you strap yourself into one of the pod&#39;s two seats and set OBJECT on your lap.
-
-There&#39;s a large button on the instrument panel.
+Then you strap yourself in. There&#39;s a large button on the instrument panel.
 
 [[LAUNCH]]
 </tw-passagedata><tw-passagedata pid="57" name="LAUNCH" tags="White Inventory" position="1098,3818" size="100,100">You&#39;re pressed back into the seat as the pod tears away from the ship. The intense acceleration makes it hard to think. Hard to keep track of time. Hard to breathe...
