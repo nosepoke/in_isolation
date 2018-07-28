@@ -8,7 +8,7 @@
 #story-caption a {
 	/* Style properties for <a> elements within the #story-caption element. */
 }
-#title, #menu, #ui-bar-tray {
+#title, #menu, #ui-bar-tray{
 	display: none;
 }
 

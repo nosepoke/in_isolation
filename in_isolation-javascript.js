@@ -1,13 +1,20 @@
-//$('#ui-bar').remove();
-//$(document.head).find('#style-ui-bar').remove();
+UIBar.stow();
+
 config.addVisitedLinkClass = true;
 
+Config.navigation.override = function () {
+    var sv = State.variables;
 
-Config.navigation.override = function (d) {
-    if (State.variables.countDown) {
-        if ((State.variables.countDown) < 100) {
-            return 'GameOver';
-        }
+    // Abort if $countdown isn't a number or it's already reached zero.
+    if (typeof sv.countDown !== 'number' || sv.countDown <= 0) {
+        return;
     }
-    return false;
+
+    // Decrement $countdown by five.
+    sv.countDown -= 5;
+
+    // If $countdown has reached zero, send the player to the GameOver passage (sans quotes).  Elsewise, let them proceed as normal.
+    if (sv.countDown <= 0) {
+        return 'GameOver';
+    }
 };
