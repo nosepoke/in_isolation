@@ -136,18 +136,27 @@ a.internalLink:active, a.externalLink:active {
 a.link-visited {
 	color: #a27be5;
 }
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">//$('#ui-bar').remove();
 //$(document.head).find('#style-ui-bar').remove();
 config.addVisitedLinkClass = true;
 
 
-Config.navigation.override = function (d) {
-    if (State.variables.countDown) {
-        if ((State.variables.countDown) < 100) {
-            return 'GameOver';
-        }
+Config.navigation.override = function () {
+    var sv = State.variables;
+
+    // Abort if $countdown isn't a number or it's already reached zero.
+    if (typeof sv.countDown !== 'number' || sv.countDown <= 0) {
+        return;
     }
-    return false;
+
+    // Decrement $countdown by five.
+    sv.countDown -= 5;
+
+    // If $countdown has reached zero, send the player to the GameOver passage (sans quotes).  Elsewise, let them proceed as normal.
+    if (sv.countDown <= 0) {
+        return 'GameOver';
+    }
 };
 
 
@@ -267,7 +276,7 @@ Do you take anything with you?
 
 [[Grab something!|Grab things quickly]]
 [[Just run for it!|Run for the pods]]
-&lt;&lt;silently&gt;&gt;&lt;&lt;set $countDown to 100&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Grab things quickly" tags="Room Red Timer Inventory" position="932,1651" size="100,100">You spin, looking around the room. What to take?
+&lt;&lt;silently&gt;&gt;&lt;&lt;set $countDown to 50&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Grab things quickly" tags="Room Red Timer Inventory" position="932,1651" size="100,100">You spin, looking around the room. What to take?
 
 There are your posters and pictures on [[the wall next to your bed|bedwall2]].
 There&#39;s the weird stuff in your [[roommate&#39;s closet|RTcloset2]].
@@ -562,4 +571,4 @@ About this game
 Share</tw-passagedata><tw-passagedata pid="64" name="StoryCaption" tags="" position="429,63" size="100,100">Time left to escape:
 $countDown seconds</tw-passagedata><tw-passagedata pid="65" name="GameOver" tags="" position="1328,4457" size="100,100">The ship explodes and your atoms are sprinkled like glitter across the system. Boom!
 
-[[Try again|Asleep|</tw-passagedata></tw-storydata>
+[[Try again|Asleep]]</tw-passagedata></tw-storydata>
